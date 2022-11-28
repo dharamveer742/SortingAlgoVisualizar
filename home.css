@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.main {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(225, 225, 225, 0.5)), url("pexels-nextvoyage-490466.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    margin: auto;
+    border-top:1px;
+    border-left:1px;
+    border-style: solid;
+    border-color:rgb(106, 18, 195) ;
+    background-color: #000;
+    
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    
+}
+
+.logo {
+    font-size: 35px;
+    color: #ff7200;
+    padding-left: 30px;
+
+    font-family: Arial;
+    float: left;
+}
+
+#visu {
+    color: #ffffff;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    font-size: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(210, 30, 210);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+ul li a:hover {
+    color: #ff7200;
+
+}
+
+.contain {
+    padding-left:60px;
+    height: auto;
+    color: #ffffff;
+    position: relative;
+}
+
+.contain p {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-family: arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.contain h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.contain h1 span {
+    color: yellowgreen;
+    font-size: 60px;
+}

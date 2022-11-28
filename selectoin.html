@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seletion</title>
+    <link rel="stylesheet" href="./style.css"  type="text/css"/>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="icon">
+        <h1 class="logo"><span id="visu">Visu</span>Algo</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./bubble.html">BUBBLE</a></li>
+          <li><a href="./selectoin.html">SELECTION</a></li>
+          <li><a href="./insertion.html">INSERTION</a></li>
+          <li><a href="./counting.html">COUNTING</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cantent">
+      <div align="center" class="main">
+        <div id="perant">
+          <div id="one" class="box"></div>
+          <div id="two" class="box"></div>
+          <div id="three" class="box"></div>
+          <div id="four" class="box"></div>
+          <div id="five" class="box"></div>
+          <div id="six" class="box"></div>
+          <div id="seven" class="box"></div>
+          <div id="eight" class="box"></div>
+          <div id="nine" class="box"></div>
+          <div id="ten" class="box"></div>
+          <div id="ten1" class="box"></div>
+          <div id="ten2" class="box"></div>
+          <div id="ten3" class="box"></div>
+          <div id="ten4" class="box"></div>
+          <div id="ten5" class="box"></div>
+        </div>
+
+        <button onclick="move()">Play</button>
+      </div>
+
+      <div class="code">
+        <pre>
+    
+   <span class="comment">// Selection sort in Java </span>
+
+    import java.util.Arrays;
+      
+    class SelectionSort {
+      void selectionSort(int array[]) {
+        int size = array.length;
+      
+        for (int step = 0; step < size - 1; step++) {
+          int min_idx = step;
+      
+          for (int i = step + 1; i < size; i++) {
+      
+          <span class="comment"> // To sort in descending order, change > to < in this line.
+           // Select the minimum element in each loop. </span>
+          if (array[i] < array[min_idx]) {
+                min_idx = i;
+              }
+            }
+      
+          <span class="comment">  // put min at the correct position </span>
+            int temp = array[step];
+            array[step] = array[min_idx];
+            array[min_idx] = temp;
+          }
+        }
+      
+        <span class="comment">// driver code </span>
+        public static void main(String args[]) {
+          int[] data = { 20, 12, 10, 15, 2 };
+          SelectionSort ss = new SelectionSort();
+          ss.selectionSort(data);
+          System.out.println("Sorted Array in Ascending Order: ");
+          System.out.println(Arrays.toString(data));
+        }
+      }
+    </pre>
+      </div>
+    </div>
+    <script src="selection.js"></script>
+  </body>
+</html>

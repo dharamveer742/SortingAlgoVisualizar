@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#000;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+ width: 100%;
+ height: 65px;
+ margin: auto;
+ border-top: 1px solid rgb(106, 18, 195);
+ background-color:#000;
+ 
+}
+.icon
+{
+    width: 200px;
+    float: left;
+    height: 70;
+}
+.logo
+{
+    font-size: 35px;
+    color: #ff7200;
+    padding-left: 30px;
+    padding-top: 10;
+    font-family: Arial;
+    float: left;
+}
+#visu
+{
+    color: #fff;
+}
+.manu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    
+    margin-left: 62px;
+    font-size: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 2, 255);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.cantent
+{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    
+    
+    margin-left: 30px;
+    margin-top: 2px;
+ 
+}
+#perant{
+    width: 600px;
+    height: 175px;
+    background-color: aliceblue;
+    position: relative;
+    border-bottom: 2px solid green;
+}
+
+#perant2{
+    width: 600px;
+    height: 175px;
+    background-color: aliceblue;
+    position: relative;
+    
+    border-bottom: 2px solid green;
+}
+.box{
+    width: 35px;
+    height: 0px;
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+}
+.bx{
+    width: 35px;
+    
+    background-color: lightgray;
+    display: inline-block;
+    position: relative;
+}
+#box1
+{
+    height:20px ;
+    margin-left: 150px;
+    /* background-color: yellow; */
+}
+#box2
+{
+    height:40px ;
+    /* background-color: yellowgreen; */
+}
+#box3
+{
+    height:70px ;
+    /* background-color: red; */
+}
+#box4
+{
+    height:100px ;
+    /* background-color: wheat; */
+}
+#box5
+{
+    height:120px ;
+    /* background-color: #ff7200; */
+}
+#box6
+{
+    height:135px ;
+    /* background-color: aqua; */
+}
+#box7
+{
+    height:145px ;
+    /* background-color: chartreuse; */
+}
+#box16{
+    width: 5px;
+    height: 145px;
+    background-color: aliceblue; 
+}
+#ten51{
+    width: 5px;
+    height: 170px;
+    background-color: aliceblue;
+}
+p{
+    margin-left: 160px;
+    word-spacing: 25px;
+    font-size: 20px;
+    color: blue;
+}
+button{
+    margin-top:30px;
+}
+
+
+.code
+{
+   width:35%;
+   font-size:10px;
+    height:400px;
+   
+    overflow:scroll;
+    margin-right: 5%;
+    color: cornflowerblue;
+    background-color:azure;
+    border: 3px solid green
+}
+.comment
+{
+    color: hotpink
+}
+.down
+{
+    width: 560px;
+    margin: 20px;
+    height: 5px;
+    background-color:whitesmoke;
+}
+#up
+{
+    width: 450px;
+    height: 5px;
+    background-color: red;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.4s ease;
+}
+button:hover{
+    background: #fff;
+    color: #ff7200;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bubble</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="icon">
+        <h1 class="logo"><span id="visu">Visu</span>Algo</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./bubble.html">BUBBLE</a></li>
+          <li><a href="./selectoin.html">SELECTION</a></li>
+          <li><a href="./insertion.html">INSERTION</a></li>
+          <li><a href="./counting.html">COUNTING</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cantent">
+      <div align="center" class="main">
+        <div id="perant">
+          <div id="one" class="box"></div>
+          <div id="two" class="box"></div>
+          <div id="three" class="box"></div>
+          <div id="four" class="box"></div>
+          <div id="five" class="box"></div>
+          <div id="six" class="box"></div>
+          <div id="seven" class="box"></div>
+          <div id="eight" class="box"></div>
+          <div id="nine" class="box"></div>
+          <div id="ten" class="box"></div>
+          <div id="ten1" class="box"></div>
+          <div id="ten2" class="box"></div>
+          <div id="ten3" class="box"></div>
+          <div id="ten4" class="box"></div>
+          <div id="ten5" class="box"></div>
+        </div>
+        <button onclick="move()">Play</button>
+      </div>
+
+      <div class="code">
+        <pre>
+    <span class="comment">// Bubble sort in Java </span>
+
+       import java.util.Arrays;
+       class Main {
+
+      <span class="comment">// perform the bubble sort </span>
+         static void bubbleSort(int array[]) {
+         int size = array.length;
+    
+      <span class="comment">// loop to access each array element </span>
+         for (int i = 0; i < size - 1; i++)
+    
+     <span class="comment"> // loop to compare array element </span>
+         for (int j = 0; j < size - i - 1; j++)
+
+        <span class="comment">// compare two adjacent elements 
+          // change > to < to sort in descending order </span>
+
+            if (array[j] > array[j + 1]) {
+
+          <span class="comment">// swapping occurs if elements 
+          // are not in the intended order </span>
+            int temp = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = temp;
+          }
+        }
+
+         public static void main(String args[]) {
+          int[] data = { -2, 45, 0, 11, -9 };
+        <span class="comment"> // call method using class name </span>
+          Main.bubbleSort(data);
+    
+         System.out.println("Sorted Array in Ascending Order:");
+        System.out.println(Arrays.toString(data));
+      }
+    }</pre>
+      </div>
+    </div>
+
+    <script src="./bubble.js"></script>
+  </body>
+</html>
